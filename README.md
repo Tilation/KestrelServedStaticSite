@@ -1,4 +1,6 @@
 # ✨ Kestrel Served Static Site
+![Badge](https://img.shields.io/badge/Production_Ready%3F-working_on_it-blue)
+
 Permite desarrollar una api en Asp Net Core y generar los servicios en TypeScript para consumir desde una aplicacion web estatica, diseñado para Angular.
 Separando lo que es backend de lo frontend, pero manteniendo la infraestructura de ambos proyectos sincronizada.
 Diseñado enteramente desde cero y con una mentalidad clara, aprovechar el rendimiento de dotnet y la versatilidad de typescript/javascript.
@@ -14,3 +16,4 @@ Esto permite que ambos proyectos estén sincronizados automaticamente y los camb
 - [ ] Crear un servicio configurable para la autenticacion y autorizacion Angular-C#
   - [ ] Hacer que si se usa seguridad, se puedan refrescar automaticamente los tokens
   - [ ] Permitir persistir en cookies o storage un token para no tener que inicar sesion cada vez.
+
