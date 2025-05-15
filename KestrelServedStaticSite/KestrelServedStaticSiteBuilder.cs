@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.OpenApi.Models;
 
-namespace KestrelServedAngular
+namespace KestrelServedStaticSite
 {
     public class KestrelServedStaticSiteBuilder
     {
@@ -112,7 +112,7 @@ namespace KestrelServedAngular
 
                 if (_app.Environment.IsDevelopment())
                 {
-                    // Desarrollo con proxy al servidor de desarrollo de Angular
+                    // Proxy
                     //spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
                 }
             });

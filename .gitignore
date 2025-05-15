@@ -1,5 +1,5 @@
 /.cr
 /.vs
-/KestrelServedAngular/bin
-/KestrelServedAngular/obj
-KestrelServedAngular/appsettings.Development.json
+/KestrelServedStaticSite/bin
+/KestrelServedStaticSite/obj
+KestrelServedStaticSite/appsettings.Development.json

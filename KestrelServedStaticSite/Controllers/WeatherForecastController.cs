@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace KestrelServedAngular.Controllers
+namespace KestrelServedStaticSite.Controllers
 {
     [ApiController]
     [Route("[controller]")]

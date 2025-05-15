@@ -1,4 +1,4 @@
-namespace KestrelServedAngular
+namespace KestrelServedStaticSite
 {
     public class WeatherForecast
     {

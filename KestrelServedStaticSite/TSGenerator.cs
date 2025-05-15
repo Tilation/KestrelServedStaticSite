@@ -1,7 +1,7 @@
 ﻿using NSwag;
 using NSwag.CodeGeneration.TypeScript;
 
-namespace KestrelServedAngular
+namespace KestrelServedStaticSite
 {
     class TSGenerator : BackgroundService
     {
