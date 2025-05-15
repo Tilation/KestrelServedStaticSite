@@ -38,7 +38,6 @@ This allows both projects to remain automatically synchronized, and changes made
 - [ ] Configure CI/CD pipeline (e.g., GitHub Actions, GitLab CI)
 - [ ] Environment-based configuration support (dev/staging/prod)
 - [ ] Enable static Angular build output in publish profile
-- [ ] Add support for cloud deployment (Azure, AWS, etc.)
 - [ ] Add secrets management via environment variables or vault
 
 ### 🔐 Security & Auth
@@ -61,13 +60,6 @@ This allows both projects to remain automatically synchronized, and changes made
 - [ ] Add offline/timeout fallback display for API downtime
 - [ ] Add i18n support using Angular i18n or ngx-translate
 
-### 📁 Business Features
-- [ ] Add multitenancy support (e.g., per organization/account)
-- [ ] Add file upload service with backend validation
-- [ ] Add email notification service (SMTP, SendGrid, etc.)
-- [ ] Add subscription/license logic (e.g., Stripe or LemonSqueezy)
-- [ ] Add optional integration with feature flags (e.g., LaunchDarkly)
-
 ### 🧪 Testing & Quality
 - [ ] Add unit and integration tests for API and frontend
 - [ ] Add end-to-end tests (Cypress or Playwright)
@@ -76,6 +68,5 @@ This allows both projects to remain automatically synchronized, and changes made
 
 ### 📚 DX and Documentation
 - [ ] Create setup script or CLI for scaffolding new projects
-- [ ] Add example modules/features (User, Blog, etc.)
 - [ ] Create docs site or markdown-based documentation
 - [ ] Include demo/test accounts for local development
