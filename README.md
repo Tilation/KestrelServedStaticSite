@@ -16,4 +16,6 @@ Esto permite que ambos proyectos estén sincronizados automaticamente y los camb
 - [ ] Crear un servicio configurable para la autenticacion y autorizacion Angular-C#
   - [ ] Hacer que si se usa seguridad, se puedan refrescar automaticamente los tokens
   - [ ] Permitir persistir en cookies o storage un token para no tener que inicar sesion cada vez.
-
+- [ ] Compatibilidad para que el sitio csr pueda ser con los sub módulos de Github.
+- [ ] Crear un script para configurar fácilmente el proyecto.
+  - [ ] Permitir agregar un sub módulos de Github como sitio csr.
