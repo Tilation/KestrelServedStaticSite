@@ -1,32 +1,81 @@
 # ✨ Kestrel Served Static Site
 ![Badge](https://img.shields.io/badge/Project_status-working_on_dev_mode-orange)
 
-Permite desarrollar una api en Asp Net Core y generar los servicios en TypeScript para consumir desde una aplicacion web estatica, diseñado para Angular (pero podes usar lo que mas te guste!).
-Separando lo que es backend de lo frontend, pero manteniendo la infraestructura de ambos proyectos sincronizada.
-Diseñado enteramente desde cero y con una mentalidad clara, aprovechar el rendimiento y confiabilidad de dotnet y la versatilidad e iterabilidad rapida del desarrollo con typescript/javascript.
+Allows you to develop an API in ASP.NET Core and generate TypeScript services to be consumed from a static web application, designed for Angular (but you can use whatever you like!).
+It separates the backend from the frontend, while keeping both projects' infrastructure in sync.
+Entirely designed from scratch with a clear mindset: take advantage of .NET’s performance and reliability along with the flexibility and rapid iteration of TypeScript/JavaScript development.
 
-## ⁉️ ¿Cómo funciona?
-Se usa [Kestrel](https://learn.microsoft.com/es-es/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-8.0) como columna principal del proyecto, que nos permite crear nuestra API usando [Controllers](https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-8.0) y tambien servir los archivos estaticos de nuestra pagina web hecha con Angular 19 CSR.
-Sobre eso, [NSwag](https://github.com/RicoSuter/NSwag) nos ayuda y genera automaticamente servicios typescript para poder consumir la API desde nuestra aplicacion Angular. También genera las entidades de transporte de datos.
-Esto permite que ambos proyectos estén sincronizados automaticamente y los cambios hechos en la API siempre estén en nuestra aplicacion Angular.
+## ⁉️ How does it work?
+[Kestrel](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-8.0) is used as the backbone of the project, allowing us to create our API using [Controllers](https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-8.0) and also serve the static files of our web page.
+On top of that, [NSwag](https://github.com/RicoSuter/NSwag) helps by automatically generating TypeScript services to consume the API from our static web application. It also generates the data transport entities.
+This allows both projects to remain automatically synchronized, and changes made in the API are always reflected in our Angular application.
 
-## 🚀 Roadmap
-- [ ] Personalizar el perfil debug para que también ejecute "ng serve" y que Kestrel rutee a ese puerto para permitir hot reload del codigo de Angular
-- [x] Usar NSwag para generar los servicios TypeScript que consumirán la API
-- [ ] Crear un servicio configurable para la autenticacion y autorizacion Angular-C#
-  - [ ] Hacer que si se usa seguridad, se puedan refrescar automaticamente los tokens
-  - [ ] Permitir persistir en cookies o storage un token para no tener que inicar sesion cada vez.
-- [ ] Compatibilidad para que el sitio csr pueda ser con los sub módulos de Github.
-- [ ] Crear un script para configurar fácilmente el proyecto.
-  - [ ] Permitir agregar un sub módulos de Github como sitio csr.
-- [ ] Soporte para docker.
+## 🚀 Personal Roadmap
+- [ ] Customize the debug profile to also run "ng serve" and route requests from Kestrel to that port, enabling hot reload for Angular code
+- [x] Use NSwag to generate TypeScript services that will consume the API
+- [ ] Create a configurable authentication and authorization service for Angular-C#
+  - [ ] Ensure that if security is enabled, tokens can be automatically refreshed
+  - [ ] Allow persisting a token in cookies or storage to avoid logging in every time
+- [ ] Compatibility so that the CSR site can be a GitHub submodule
+- [ ] Create a script to easily set up the project
+  - [ ] Allow adding a GitHub submodule as the CSR site
+- [ ] Docker support
 
-## 👌 Flujo de trabajo ideal
-- Clonar el repositorio
-- Ejecutar el script de configuracion para personalizar la plantilla (todavia no existe 🤭)
-  - (opcional) Hacer de la pagina web estatica un sub modulo de github por si en un futuro se quiere desacoplar de Kestrel
-- A desarrollar!
-  - Crear o modificar controllers
-  - Generar codigo con NSwag
-  - Usar los servicios desde la pagina web
-  - Seguir desarrollando!
+## 👌 Ideal workflow
+- Clone the repository
+- Run the configuration script to customize the template (doesn’t exist yet 🤭)
+  - (Optional) Make the static web page a GitHub submodule in case you want to decouple it from Kestrel in the future
+- Start developing!
+  - Create or modify controllers
+  - Generate code with NSwag
+  - Use the services from the web page
+  - Keep on developing!
+
+## 🧱 Production-Ready Roadmap
+
+### 🔧 Infrastructure & DevOps
+- [ ] Add Dockerfile and docker-compose for dev & prod
+- [ ] Configure CI/CD pipeline (e.g., GitHub Actions, GitLab CI)
+- [ ] Environment-based configuration support (dev/staging/prod)
+- [ ] Enable static Angular build output in publish profile
+- [ ] Add support for cloud deployment (Azure, AWS, etc.)
+- [ ] Add secrets management via environment variables or vault
+
+### 🔐 Security & Auth
+- [ ] Implement JWT-based authentication and Angular guards
+- [ ] Add role-based and policy-based authorization
+- [ ] Secure cookies or token storage (HttpOnly, Secure)
+- [ ] Enable CSRF, XSS, and input validation protections
+- [ ] Configure security headers (CSP, HSTS, etc.)
+- [ ] Add audit logging for sensitive actions
+
+### 🧠 Observability & Reliability
+- [ ] Add centralized logging (e.g., Serilog, Seq, or Elastic)
+- [ ] Add ASP.NET Health Checks (`/healthz`)
+- [ ] Add frontend error logging/interception
+- [ ] Add Prometheus or OpenTelemetry metrics support
+- [ ] Enable readiness/liveness probes for Docker/Kubernetes
+
+### 🌐 Frontend UX & Internationalization
+- [ ] Add global Angular HTTP interceptor for error & token handling
+- [ ] Add offline/timeout fallback display for API downtime
+- [ ] Add i18n support using Angular i18n or ngx-translate
+
+### 📁 Business Features
+- [ ] Add multitenancy support (e.g., per organization/account)
+- [ ] Add file upload service with backend validation
+- [ ] Add email notification service (SMTP, SendGrid, etc.)
+- [ ] Add subscription/license logic (e.g., Stripe or LemonSqueezy)
+- [ ] Add optional integration with feature flags (e.g., LaunchDarkly)
+
+### 🧪 Testing & Quality
+- [ ] Add unit and integration tests for API and frontend
+- [ ] Add end-to-end tests (Cypress or Playwright)
+- [ ] Enforce code linting and format rules
+- [ ] Add test coverage tracking
+
+### 📚 DX and Documentation
+- [ ] Create setup script or CLI for scaffolding new projects
+- [ ] Add example modules/features (User, Blog, etc.)
+- [ ] Create docs site or markdown-based documentation
+- [ ] Include demo/test accounts for local development
