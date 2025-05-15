@@ -8,6 +8,8 @@ namespace KestrelServedAngular
         private WebApplicationBuilder _builder = null!;
         private WebApplication _app = null!;
 
+       
+
         public void CreateBuilder(string[] args)
         {
             _builder = WebApplication.CreateBuilder(args);
@@ -76,6 +78,8 @@ namespace KestrelServedAngular
             {
                 configuration.RootPath = ksss["StaticSiteRelativeRootPath"];
             });
+
+            _builder.Services.AddHostedService<TSGenerator>();
         }
 
         public void Build()
