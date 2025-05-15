@@ -3,7 +3,7 @@
 
 Permite desarrollar una api en Asp Net Core y generar los servicios en TypeScript para consumir desde una aplicacion web estatica, diseñado para Angular (pero podes usar lo que mas te guste!).
 Separando lo que es backend de lo frontend, pero manteniendo la infraestructura de ambos proyectos sincronizada.
-Diseñado enteramente desde cero y con una mentalidad clara, aprovechar el rendimiento de dotnet y la versatilidad de typescript/javascript.
+Diseñado enteramente desde cero y con una mentalidad clara, aprovechar el rendimiento y confiabilidad de dotnet y la versatilidad e iterabilidad rapida del desarrollo con typescript/javascript.
 
 ## ⁉️ ¿Cómo funciona?
 Se usa [Kestrel](https://learn.microsoft.com/es-es/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-8.0) como columna principal del proyecto, que nos permite crear nuestra API usando [Controllers](https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-8.0) y tambien servir los archivos estaticos de nuestra pagina web hecha con Angular 19 CSR.
