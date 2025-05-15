@@ -19,3 +19,13 @@ Esto permite que ambos proyectos estén sincronizados automaticamente y los camb
 - [ ] Compatibilidad para que el sitio csr pueda ser con los sub módulos de Github.
 - [ ] Crear un script para configurar fácilmente el proyecto.
   - [ ] Permitir agregar un sub módulos de Github como sitio csr.
+
+## Flujo de trabajo ideal
+- Clonar el repositorio
+- Ejecutar el script de configuracion
+- (opcional) Hacer de la pagina web estatica un sub modulo de github por si en un futuro se quiere desacoplar de Kestrel
+- A desarrollar!
+  - Crear o modificar controllers
+  - Generar codigo con NSwag
+  - Usar los servicios desde la pagina web
+  - Seguir desarrollando!
