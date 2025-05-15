@@ -1,0 +1,5 @@
+/.cr
+/.vs
+/KestrelServedAngular/bin
+/KestrelServedAngular/obj
+KestrelServedAngular/appsettings.Development.json
