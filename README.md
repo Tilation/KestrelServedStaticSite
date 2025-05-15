@@ -19,6 +19,7 @@ Esto permite que ambos proyectos estén sincronizados automaticamente y los camb
 - [ ] Compatibilidad para que el sitio csr pueda ser con los sub módulos de Github.
 - [ ] Crear un script para configurar fácilmente el proyecto.
   - [ ] Permitir agregar un sub módulos de Github como sitio csr.
+- [ ] Soporte para docker.
 
 ## 👌 Flujo de trabajo ideal
 - Clonar el repositorio
