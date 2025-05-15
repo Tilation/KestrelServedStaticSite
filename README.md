@@ -1,5 +1,5 @@
 # ✨ Kestrel Served Static Site
-![Badge](https://img.shields.io/badge/Production_Ready%3F-working_on_it-blue)
+![Badge](https://img.shields.io/badge/Project_status-working_on_dev_mode-orange)
 
 Permite desarrollar una api en Asp Net Core y generar los servicios en TypeScript para consumir desde una aplicacion web estatica, diseñado para Angular (pero podes usar lo que mas te guste!).
 Separando lo que es backend de lo frontend, pero manteniendo la infraestructura de ambos proyectos sincronizada.
