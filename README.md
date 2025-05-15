@@ -7,7 +7,7 @@ Diseñado enteramente desde cero y con una mentalidad clara, aprovechar el rendi
 
 ## ⁉️ ¿Cómo funciona?
 Se usa [Kestrel](https://learn.microsoft.com/es-es/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-8.0) como columna principal del proyecto, que nos permite crear nuestra API usando [Controllers](https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-8.0) y tambien servir los archivos estaticos de nuestra pagina web hecha con Angular 19 CSR.
-Sobre eso, [NSwag](https://github.com/RicoSuter/NSwag) nos ayuda y genera automaticamente servicios typescript para poder consumir desde nuestra aplicacion Angular. También genera las entidades de transporte de datos.
+Sobre eso, [NSwag](https://github.com/RicoSuter/NSwag) nos ayuda y genera automaticamente servicios typescript para poder consumir la API desde nuestra aplicacion Angular. También genera las entidades de transporte de datos.
 Esto permite que ambos proyectos estén sincronizados automaticamente y los cambios hechos en la API siempre estén en nuestra aplicacion Angular.
 
 ## 🚀 Roadmap
