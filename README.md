@@ -9,10 +9,8 @@ Sobre eso, [NSwag](https://github.com/RicoSuter/NSwag) nos ayuda y genera automa
 Esto permite que ambos proyectos estén sincronizados automaticamente y los cambios hechos en la API siempre estén en nuestra aplicacion Angular.
 
 ## 🚀 Roadmap
-
--[ ] Personalizar el perfil debug para que también ejecute "ng serve" y que Kestrel rutee a ese puerto para permitir hot reload del codigo de Angular
--[x] Usar NSwag para generar los servicios TypeScript que consumirán la API
--[ ] Crear un servicio configurable para la autenticacion y autorizacion Angular-C#
-  -[ ] Hacer que si se usa seguridad, se puedan refrescar automaticamente los tokens
-  -[ ] Permitir persistir en cookies o storage un token para no tener que inicar sesion cada vez.
-	
+- [ ] Personalizar el perfil debug para que también ejecute "ng serve" y que Kestrel rutee a ese puerto para permitir hot reload del codigo de Angular
+- [x] Usar NSwag para generar los servicios TypeScript que consumirán la API
+- [ ] Crear un servicio configurable para la autenticacion y autorizacion Angular-C#
+  - [ ] Hacer que si se usa seguridad, se puedan refrescar automaticamente los tokens
+  - [ ] Permitir persistir en cookies o storage un token para no tener que inicar sesion cada vez.
