@@ -23,8 +23,8 @@ Esto permite que ambos proyectos estén sincronizados automaticamente y los camb
 
 ## 👌 Flujo de trabajo ideal
 - Clonar el repositorio
-- Ejecutar el script de configuracion
-- (opcional) Hacer de la pagina web estatica un sub modulo de github por si en un futuro se quiere desacoplar de Kestrel
+- Ejecutar el script de configuracion para personalizar la plantilla (todavia no existe 🤭)
+  - (opcional) Hacer de la pagina web estatica un sub modulo de github por si en un futuro se quiere desacoplar de Kestrel
 - A desarrollar!
   - Crear o modificar controllers
   - Generar codigo con NSwag
