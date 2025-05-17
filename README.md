@@ -1,5 +1,5 @@
 # ✨ Kestrel Served Static Site
-![Badge](https://img.shields.io/badge/Project_status-working_on_dev_mode-orange)
+[![Badge](https://img.shields.io/badge/Project_status-working_on_dev_mode-orange)](https://github.com/Tilation/KestrelServedStaticSite/milestone/1)
 
 Allows you to develop an API in ASP.NET Core and generate TypeScript services to be consumed from a static web application, designed for Angular (but you can use whatever you like!).
 It separates the backend from the frontend, while keeping both projects' infrastructure in sync.
