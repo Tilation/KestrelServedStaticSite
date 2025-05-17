@@ -3,3 +3,4 @@
 /KestrelServedStaticSite/bin
 /KestrelServedStaticSite/obj
 KestrelServedStaticSite/appsettings.Development.json
+/KestrelServedStaticSite/static-site
