@@ -150,13 +150,8 @@ namespace KestrelServedStaticSite
 
                 _app.UseSpa(spa =>
                 {
-                    spa.Options.SourcePath = ksss["StaticSiteRelativeRootPath"];
-
-                    if (_app.Environment.IsDevelopment())
-                    {
-                        // Proxy
-                        spa.UseProxyToSpaDevelopmentServer($"http://{host}:{port}");
-                    }
+                    // Proxy
+                    spa.UseProxyToSpaDevelopmentServer($"http://{host}:{port}");
                 });
             }
         }
