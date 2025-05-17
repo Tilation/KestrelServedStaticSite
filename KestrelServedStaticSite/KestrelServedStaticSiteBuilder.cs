@@ -147,15 +147,7 @@ namespace KestrelServedStaticSite
                     WorkingDirectory = workingDirectory
                 };
                 _debugServer = Process.Start(startInfo);
-                _debugServer.OutputDataReceived += (sender, args) =>
-                {
-                    Log.Information("{0}: {1}", "DebugServer", args.Data);
-                };
 
-                _debugServer.ErrorDataReceived += (sender, args) =>
-                {
-                    Log.Error("{0}: {1}", "DebugServer", args.Data);
-                };
                 _app.UseSpa(spa =>
                 {
                     spa.Options.SourcePath = ksss["StaticSiteRelativeRootPath"];
